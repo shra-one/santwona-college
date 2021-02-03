@@ -1,0 +1,7 @@
+.vscode
+./assets/scss/**/*
+.node_modules
+.sass-cache/
+./assets/scss/.sass-cache/*
+./assets/scss/.sass-cache
+
