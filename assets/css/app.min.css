@@ -471,10 +471,20 @@ blockquote {
 
 .header .navbar-nav--top {
   border-bottom: 1px solid #ccc;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
   flex: 1;
   width: 100%;
   margin-bottom: 8px;
+}
+
+@media (max-width: 767.98px) {
+  .header .navbar-nav--top {
+    margin-top: 16px;
+  }
+}
+
+.header .navbar-nav--top > li {
+  padding: 4px 0;
 }
 
 .header .navbar-nav--top > li, .header .navbar-nav--top > li > a {
@@ -510,6 +520,11 @@ blockquote {
 .header .navbar-nav--menu .nav-item.active .nav-link {
   background: var(--primary);
   color: white;
+}
+
+.header .navbar-nav--menu .nav-item.highlighted .nav-link {
+  background-color: var(--secondary);
+  color: white !important;
 }
 
 .header .navbar-nav--menu .nav-link {
